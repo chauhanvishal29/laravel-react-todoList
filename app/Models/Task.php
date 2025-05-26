@@ -9,7 +9,7 @@ class Task extends Model
 {
     protected $table = 'tasks';
 
-    protected $guarded = [];
+    protected $guarded = ['created_at', 'updated_at'];
 
     /**
      * @return BelongsTo<Task, Project>

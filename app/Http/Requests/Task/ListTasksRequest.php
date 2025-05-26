@@ -22,7 +22,7 @@ class ListTasksRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'project_id' => 'required|integer|exists:projects,id',
+            'project_id' => 'required|string',
         ];
     }
 }
